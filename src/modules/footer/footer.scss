@@ -7,13 +7,15 @@
 
 .container {
   display: flex;
+  justify-content: space-around;
   margin: 88px 251px;
 }
 
 .footer__block {
+  display: flex;
+  flex-direction: column;
   height: 170px;
   min-width: 333px;
-  margin-right: 105px;
 }
 
 .footer__list {

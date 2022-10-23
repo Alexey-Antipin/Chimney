@@ -1,0 +1,29 @@
+header.header 
+    img(src="../../img/logo.png" alt="logo").header__logo
+    include ../../svg/burgermenu.svg
+    ul.header__list
+        li.header__item Каталог товаров                        
+        li.header__item доставка и оплата
+        li.header__item Цены
+        li.header__item Контакты
+    div 
+        a(href="tel:+78125092198").header__telefon
+            span.header__tel +7 (812) 
+            span.header__tel-after 509 21 98 
+    div.header__call перезвоните мне
+    div.header__net 
+        a(href="https://vk.com/").header__network
+            include ../../svg/vk.svg
+        a(href="https://web.telegram.org/").header__network 
+            include ../../svg/telegram.svg
+        a(href="https://www.instagram.com/").header__network 
+            include ../../svg/instagram.svg
+        a(href="https://web.whatsapp.com/").header__network 
+            include ../../svg/whatsapp.svg
+    div.header__score-block 
+        a(href="https://web.telegram.org/").header__score 
+          include ../../svg/search.svg
+        a(href="https://www.instagram.com/").header__score 
+          include ../../svg/like.svg
+        a(href="https://web.whatsapp.com/").header__score 
+          include ../../svg/cart.svg

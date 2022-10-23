@@ -1,0 +1,60 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header__list {
+  display: flex;
+  gap: 10px;
+}
+
+.header__item {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #4c858b;
+}
+
+.header__telefon {
+  text-decoration: none;
+}
+
+.header__tel {
+  font-family: "Montserrat";
+  letter-spacing: 0.08em;
+  color: #4c858b;
+}
+
+.header__tel-after {
+  font-family: "Montserrat";
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  color: #000000;
+}
+
+.header__call {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #ae2236;
+  border-bottom: 1px dashed #ae2236;
+}
+
+.header__net {
+  display: flex;
+  gap: 10px;
+}
+
+.header__network {
+  text-decoration: none;
+}
+
+.header__score {
+  text-decoration: none;
+}
