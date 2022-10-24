@@ -1,0 +1,47 @@
+- var text = ["Доступные цены","Собственное производство  Дымоходов","Выполнение необходимых работ, связанных с установкой камина, печи, котла","Гарантия (от трёх до десяти лет)","Работаем чисто, аккуратно, убираем за собой, не сквернословим","Только русские квалифицированные специалисты","Устанавливаем любые дымоходы всех производителей",]
+
+hr.description__hr-menu
+div.description
+    h1.description__title Монтаж дымоходов
+
+    hr.description__hr
+    ul.description__list
+        li.description__item Главная <span class="description__mark">></span> 
+        li.description__item.description__item--blue Монтаж дымоходов
+    hr.description__hr
+
+    p.description__text.
+        В <span class="description__text description__text--red">Дымоход.ру</span>  
+        вам помогут как приобрести, 
+        так и установить дымоход любой конфигурации. 
+        В нашем монтажном отделе, состоящим из трёх бригад 
+        работают квалифицированные специалисты, 
+        которые ежегодно проходят курсы повышения квалификации. 
+        Все работы проводим качественно и аккуратно, 
+        в короткий срок и на совесть .
+
+    div.description__containter
+        div.description__block
+            h2.description__paragraph Lorem ipsum dolor sit amet <br> 
+                <span class="description__paragraph--red">Lorem ipsum</span>
+            ul.description__list-work
+                each item in text
+                    li.description__item-work
+                        span.description__span-work= item
+
+        div.description__block.description__block-pipe
+            div.description__triangle-1
+                include ../../svg/panel/vectorB.svg
+                include ../../svg/panel/vectorY.svg
+                include ../../svg/panel/vectorB.svg
+            div.description__background
+                include ../../svg/panel/blob.svg
+            div.description__point-1
+                include ../../svg/videoicon/group.svg
+            img(src="../../../img/pipe.png", alt="pipe").description__photo
+            div.description__point-2
+                include ../../svg/videoicon/group.svg
+            div.description__triangle-2
+                include ../../svg/panel/vectorB.svg
+                include ../../svg/panel/vectorY.svg
+                include ../../svg/panel/vectorB.svg
