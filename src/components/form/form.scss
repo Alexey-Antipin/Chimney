@@ -1,49 +1,32 @@
 .form__description {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   margin-top: 50px;
-}
-.form__title {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 30px;
-  color: #000000;
-  margin-top: 30px;
-}
-.form__text {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 30px;
-  color: #000000;
-  width: 390px;
-}
-.form__text--red {
-  font-weight: bold;
-  color: #ea3939;
-}
-.form__send-text--orange {
-  font-weight: bold;
-  color: #fe9935;
-}
-.form__send-text {
-  font-family: "Montserrat";
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 22px;
-  margin-bottom: 12px;
-}
-.form__send-undertext {
-  font-family: "Montserrat";
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 30px;
-  margin-bottom: 22px;
-}
-.form__network {
-  text-decoration: none;
+  .form__item {
+    .form__title {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 30px;
+      color: #000000;
+      margin-top: 30px;
+    }
+    .form__text {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 30px;
+      color: #000000;
+      width: 390px;
+      .form__text--red {
+        font-weight: bold;
+        color: #ea3939;
+      }
+    }
+  }
 }
 .form__consultation {
   text-align: center;
@@ -69,32 +52,130 @@
   justify-content: center;
   gap: 36px;
   margin-top: 36px;
+  .form__network {
+    text-decoration: none;
+  }
 }
 .form__send {
   margin: 0 auto;
   margin-top: 40px;
   height: 260px;
-  width: 866px;
+  max-width: 866px;
   box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.15);
+  .form__wrapper {
+    margin: 57px;
+    .form__send-text {
+      font-family: "Montserrat";
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 22px;
+      margin-bottom: 12px;
+      .form__send-text--orange {
+        font-weight: bold;
+        color: #fe9935;
+      }
+    }
+    .form__send-undertext {
+      font-family: "Montserrat";
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 30px;
+      margin-bottom: 22px;
+    }
+    .form__input {
+      height: 56px;
+      width: 240px;
+      border: 1px solid #e5e5e5;
+      border-radius: 4px;
+      margin-right: 16px;
+    }
+    .form__button {
+      height: 56px;
+      width: 240px;
+      background: #215359;
+      border-radius: 4px;
+      color: white;
+      font-family: "Montserrat";
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
 }
-.form__input {
-  height: 56px;
-  width: 240px;
-  border: 1px solid #e5e5e5;
-  border-radius: 4px;
-  margin-right: 16px;
+.form__networks-hr {
+  display: none;
 }
-.form__button {
-  height: 56px;
-  width: 240px;
-  background: #215359;
-  border-radius: 4px;
-  color: white;
-  font-family: "Montserrat";
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
+
+@media (max-width: 768px) {
+  .form__description {
+    .form__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 350px;
+    }
+  }
+  .form__consultation {
+    margin-top: 52px;
+    font-size: 40px;
+  }
+  .form__send {
+    height: 390px;
+    width: 688px;
+    margin: 0 25px;
+    margin-top: 35px;
+    .form__wrapper {
+      .form__send-text {
+        text-align: center;
+      }
+      .form__send-undertext {
+        text-align: center;
+      }
+      .form__submit {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .form__input {
+          width: 354px;
+        }
+        .form__input:first-child {
+          margin-bottom: 15px;
+        }
+        .form__button {
+          margin-top: 25px;
+        }
+      }
+    }
+  }
 }
-.form__wrapper {
-  margin: 57px;
+
+@media (max-width: 500px) {
+  .form__description {
+    margin-top: 0;
+    .form__item {
+      margin-top: 27px;
+    }
+  }
+  .form__send {
+    box-shadow: none;
+    width: 460px;
+    .form__wrapper {
+      margin: 0 auto;
+      .form__send-text {
+        width: 460px;
+      }
+      .form__submit {
+        .form__input {
+          width: 290px;
+        }
+      }
+    }
+  }
+  .form__networks-hr {
+    display: block;
+    width: 96%;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
 }

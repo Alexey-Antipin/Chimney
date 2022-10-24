@@ -3,7 +3,7 @@ include ../../modules/title/mixin
 div.part
     +content("Почему Дымоход.ру?","В отличие от других производителей, мы ручаемся за качество продукции, т.к. все Дымоходы изготавливаются из качественной стали, проверенного теплоизолятора, по современной технологии плазменной сварки «встык» ")
     ul.form__description
-        li
+        li.form__item
             include ../../svg/form/guarantee.svg
             h2.form__title Большой гарантийный срок
             p.form__text.
@@ -13,19 +13,20 @@ div.part
                 <span class="form__text--red">5 лет</span>
                 Гидроизоляция –
                 <span class="form__text--red">3 года</span>
-        li
+        li.form__item
             include ../../svg/form/architect.svg
             h2.form__title Помощь в покупке агрегата 
             p.form__text.
                 (печи, камина, котла), а также качественной
                 установке на объекте с последующим <br/>
                 гарантийным сервисом
-        li
+        li.form__item
             include ../../svg/form/review.svg
             h2.form__title Реальные отзывы клиентов
             p.form__text.
                 Убедитесь в добросовестности исполнения, 
                 прочитав Отзывы клиентов в специальном разделе.
+    
     h2.form__consultation необходима консультация?
     span.form__net-text оставьте заявку или свяжитесь с нами в социальных сетях
     div.form__networks 
@@ -37,12 +38,14 @@ div.part
             include ../../svg/orange/instagram.svg
         a(href="https://web.whatsapp.com/").form__network 
             include ../../svg/orange/whatsapp.svg 
+    hr.form__networks-hr
+
     form(id="send" method="POST").form__send
         div.form__wrapper
             p.form__send-text.
-                Для 
-                <span class="form__send-text--orange">консультации</span> заполните форму!
-            p.form__send-undertext С Вами свяжутся в ближайшее время 
-            input(type="text" placeholder="Ваше имя" name="name").form__input
-            input(type="text" placeholder="Ваш телефон" name="tel").form__input
-            button(type="submit").form__button отправить
+                Для <span class="form__send-text--orange">консультации</span> заполните форму!
+            p.form__send-undertext С Вами свяжутся в ближайшее время
+            div.form__submit
+                input(type="text" placeholder="Ваше имя" name="name").form__input
+                input(type="text" placeholder="Ваш телефон" name="tel").form__input
+                button(type="submit").form__button отправить

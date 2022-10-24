@@ -1,9 +1,10 @@
 .mounting {
   height: 300px;
-  width: 1200px;
+  width: 600px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  margin: 0 15px;
   .mounting__item {
     display: flex;
     align-items: center;
@@ -12,17 +13,43 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
+    .mounting__number {
+      font-family: "Montserrat";
+      font-weight: 700;
+      font-size: 70px;
+      line-height: 85px;
+      color: #e33e54;
+      opacity: 0.2;
+      margin-right: 42px;
+    }
   }
-  .mounting__number {
-    font-family: "Montserrat";
-    font-weight: 700;
-    font-size: 70px;
-    line-height: 85px;
-    color: #e33e54;
-    opacity: 0.2;
-    margin-right: 42px;
+}
+
+@media (max-width: 768px) {
+  .mounting {
+    height: 240px;
+    width: 100%;
+    .mounting__item {
+      font-family: "Montserrat";
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 26px;
+      width: 300px;
+      .mounting__number {
+        font-family: "Montserrat";
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 61px;
+        margin-right: 8px;
+      }
+    }
   }
-  .mounting__text{
-    width: 500px;
+}
+@media (max-width: 500px) {
+  .mounting {
+    height: 600px;
+    .mounting__item {
+      margin: 14px 0px;
+    }
   }
 }

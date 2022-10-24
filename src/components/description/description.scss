@@ -1,8 +1,8 @@
 .description {
   display: flex;
   flex-direction: column;
-  width: 1220px;
-  margin: 0 auto 136px;
+  max-width: 1220px;
+  margin: 136px auto;
   .description__title {
     font-family: "Montserrat";
     font-weight: 700;
@@ -105,7 +105,7 @@
     width: 76px;
     z-index: 1;
   }
-  .description__triangle-1{
+  .description__triangle-1 {
     @extend %triangle;
     top: 150px;
     right: -92px;
@@ -114,5 +114,33 @@
     @extend %triangle;
     top: 70px;
     left: 700px;
+  }
+}
+
+.description__hr-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .description__hr-menu {
+    display: block;
+    width: 96%;
+    margin: 0 auto;
+    margin-top: 24px;
+  }
+  .description {
+    margin: 0px 15px;
+  }
+  .description__block-pipe {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .description {
+    .description__list-work {
+      .description__item-work {
+        width: 400px;
+      }
+    }
   }
 }

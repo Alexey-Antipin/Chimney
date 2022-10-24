@@ -2,38 +2,34 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-
-.header__list {
-  display: flex;
-  gap: 10px;
-}
-
-.header__item {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 23px;
-  text-transform: uppercase;
-  color: #4c858b;
-}
-
-.header__telefon {
-  text-decoration: none;
-}
-
-.header__tel {
-  font-family: "Montserrat";
-  letter-spacing: 0.08em;
-  color: #4c858b;
-}
-
-.header__tel-after {
-  font-family: "Montserrat";
-  font-weight: bold;
-  letter-spacing: 0.08em;
-  color: #000000;
+  .header__list {
+    display: flex;
+    gap: 10px;
+    .header__item {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 23px;
+      text-transform: uppercase;
+      color: #4c858b;
+    }
+  }
+  .header__telefon {
+    text-decoration: none;
+    .header__tel {
+      font-family: "Montserrat";
+      letter-spacing: 0.08em;
+      color: #4c858b;
+    }
+    
+    .header__tel-after {
+      font-family: "Montserrat";
+      font-weight: bold;
+      letter-spacing: 0.08em;
+      color: #000000;
+    }
+  }
 }
 
 .header__call {
@@ -59,4 +55,47 @@
   border: none;
   background: none;
   margin-right: 5px;
+}
+
+.header__menu-for-tel{
+  display: none;
+}
+.header__menu-for-telmini{
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .header {
+    justify-content: space-between;
+    .header__logo{
+      margin-left: 15px;
+    }
+    .header__list {
+      display: none;
+    }
+    .header__telefon{
+      display: none;
+    }
+    .header__call{
+      display: none;
+    }
+    .header__net{
+      display: none;
+    }
+    .header__score{
+      margin-right: 15px;
+    }
+    .header__menu-for-notbook{
+      display: none;
+    }
+    .header__menu-for-tel{
+      display: inline-block;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .header__menu-for-telmini{
+    display: none;
+  }
+  
 }
