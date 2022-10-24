@@ -1,0 +1,28 @@
+.mounting {
+  height: 300px;
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  .mounting__item {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .mounting__number {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 85px;
+    color: #e33e54;
+    opacity: 0.2;
+    margin-right: 42px;
+  }
+  .mounting__text{
+    width: 500px;
+  }
+}

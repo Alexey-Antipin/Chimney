@@ -1,6 +1,6 @@
 header.header 
     img(src="../../img/logo.png" alt="logo").header__logo
-    include ../../svg/burgermenu.svg
+    include ../../svg/menu/burgermenu.svg
     ul.header__list
         li.header__item Каталог товаров                        
         li.header__item доставка и оплата
@@ -21,9 +21,9 @@ header.header
         a(href="https://web.whatsapp.com/").header__network 
             include ../../svg/whatsapp.svg
     div.header__score-block 
-        a(href="https://web.telegram.org/").header__score 
-          include ../../svg/search.svg
-        a(href="https://www.instagram.com/").header__score 
-          include ../../svg/like.svg
-        a(href="https://web.whatsapp.com/").header__score 
-          include ../../svg/cart.svg
+        button.header__score 
+          include ../../svg/menu/search.svg
+        button.header__score 
+          include ../../svg/menu/like.svg
+        button.header__score 
+          include ../../svg/menu/cart.svg

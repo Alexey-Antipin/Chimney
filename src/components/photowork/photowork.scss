@@ -1,0 +1,14 @@
+.part {
+  display: flex;
+  flex-direction: column;
+  width: 1220px;
+  margin: 0 auto;
+  margin-bottom: 136px;
+}
+
+.work {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 48px;
+}

@@ -1,4 +1,8 @@
-@import "../modules/footer/footer.scss", "../modules/header/header.scss";
+@import "../modules/footer/footer.scss", "../modules/header/header.scss",
+  "../modules/title/mixin.scss", "../components/photowork/photowork.scss",
+  "../components/videofragment/videofragment.scss",
+  "../components/form/form.scss", "../components/mounting/mounting.scss",
+  "../components/description/description.scss";
 
 * {
   margin: 0;

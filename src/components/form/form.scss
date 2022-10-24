@@ -1,0 +1,100 @@
+.form__description {
+  display: flex;
+  margin-top: 50px;
+}
+.form__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+  margin-top: 30px;
+}
+.form__text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  width: 390px;
+}
+.form__text--red {
+  font-weight: bold;
+  color: #ea3939;
+}
+.form__send-text--orange {
+  font-weight: bold;
+  color: #fe9935;
+}
+.form__send-text {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 22px;
+  margin-bottom: 12px;
+}
+.form__send-undertext {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 22px;
+}
+.form__network {
+  text-decoration: none;
+}
+.form__consultation {
+  text-align: center;
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 98px;
+}
+.form__net-text {
+  text-align: center;
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 40px;
+  margin-top: 10px;
+}
+.form__networks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+  margin-top: 36px;
+}
+.form__send {
+  margin: 0 auto;
+  margin-top: 40px;
+  height: 260px;
+  width: 866px;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.15);
+}
+.form__input {
+  height: 56px;
+  width: 240px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  margin-right: 16px;
+}
+.form__button {
+  height: 56px;
+  width: 240px;
+  background: #215359;
+  border-radius: 4px;
+  color: white;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+.form__wrapper {
+  margin: 57px;
+}

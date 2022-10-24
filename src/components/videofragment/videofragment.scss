@@ -1,0 +1,33 @@
+.video-block {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.videoplayer {
+  margin-top: 100px;
+  z-index: 1;
+}
+.fone-1 {
+  position: absolute;
+  top: 150px;
+  right: 700px;
+  z-index: 0;
+}
+.fone-2 {
+  position: absolute;
+  top: 70px;
+  right: 0px;
+  z-index: 0;
+}
+.group-1 {
+  position: absolute;
+  bottom: 2px;
+  left: 70px;
+  z-index: 0;
+}
+.group-2 {
+  position: absolute;
+  top:-20px;
+  right: 80px;
+  z-index: 0;
+}

@@ -60,12 +60,17 @@
 
 .footer__address {
   display: inline-block;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
   color: #ffffff;
 }
 
 .footer__net {
   margin-top: 10px;
   .footer__network {
+    text-decoration: none;
     margin-right: 36px;
   }
 }
