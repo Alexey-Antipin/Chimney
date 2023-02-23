@@ -2,7 +2,7 @@ import logo from "../../img/logo.png";
 import { SvgComponent } from "../../svg";
 import "./index.scss";
 
-export const Header = () => {
+export const Header:React.FC = () => {
   const massiveItem = [
     "Каталог товаров",
     "доставка и оплата",

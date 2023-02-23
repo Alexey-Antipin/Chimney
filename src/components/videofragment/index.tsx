@@ -1,7 +1,7 @@
 import { SvgComponent } from "../../svg";
 import "./index.scss";
 
-export const Videofragment = () => {
+export const Videofragment:React.FC = () => {
   return (
     <div className="part">
       <div className="content-mixin">

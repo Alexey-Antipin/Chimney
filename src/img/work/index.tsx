@@ -7,8 +7,12 @@ import w6 from "./w6.png";
 import w7 from "./w7.png";
 import w8 from "./w8.png";
 
-export const Picture = ({ choice }) => {
-  const numberPNG = (choice) => {
+type Props = {
+  choice: number;
+};
+
+export const Picture: React.FC<Props> = ({ choice }) => {
+  const numberPNG = (choice: number) => {
     switch (choice) {
       case 1:
         return w1;

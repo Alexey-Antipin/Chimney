@@ -2,7 +2,7 @@ import { SvgComponent } from "../../svg";
 import pipe from "../../img/pipe.png";
 import "./index.scss";
 
-export const Description = () => {
+export const Description: React.FC = () => {
   const text = [
     "Доступные цены",
     "Собственное производство  Дымоходов",

@@ -9,7 +9,7 @@ import {
 } from "../components";
 import "./index.scss";
 
-export const App = () => {
+export const App: React.FC = () => {
   return (
     <>
       <Header />

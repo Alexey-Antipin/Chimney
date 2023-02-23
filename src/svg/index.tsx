@@ -1,4 +1,9 @@
-export const SvgComponent = ({ word, colour }) => {
+type Props = {
+  word: string;
+  colour?: string;
+};
+
+export const SvgComponent: React.FC<Props> = ({ word, colour }) => {
   switch (word) {
     case "blob":
       return (
@@ -580,6 +585,6 @@ export const SvgComponent = ({ word, colour }) => {
         </svg>
       );
     default:
-      <></>;
+      return <svg></svg>;
   }
 };

@@ -1,7 +1,7 @@
 import { SvgComponent } from "../../svg";
 import "./index.scss";
 
-export const Footer = () => {
+export const Footer: React.FC = () => {
   const catalog = ["Дымоходы", "Дымососы", "Печи для дома", "Печи для бани"];
   const catalogRight = ["Камины", "Силикат кальция", "Котлы", "Ещё"];
   const information = [

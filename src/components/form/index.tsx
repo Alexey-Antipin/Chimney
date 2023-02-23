@@ -2,7 +2,7 @@ import { SvgComponent } from "../../svg";
 import { useState } from "react";
 import "./index.scss";
 
-export const Form = () => {
+export const Form: React.FC = () => {
   const [telefon, setTelefon] = useState("");
   const [name, setName] = useState("");
 
@@ -13,8 +13,8 @@ export const Form = () => {
     { svg: "whatsapp", link: "https://web.whatsapp.com/" },
   ];
 
-  const handleSubmit = async (event) => {
-    await event.preventDefault();
+  const handleSubmit = (event: React.MouseEvent) => {
+    event.preventDefault();
 
     if ((name && telefon) !== "") {
       alert("Отправлено.");

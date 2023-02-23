@@ -1,7 +1,7 @@
 import { Picture } from "../../img/work";
 import "./index.scss";
 
-export const PhotoWork = () => {
+export const PhotoWork:React.FC = () => {
   return (
     <div className="part">
       <div className="content-mixin">

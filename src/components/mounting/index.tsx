@@ -1,6 +1,6 @@
 import "./index.scss";
 
-export const Mounting = () => {
+export const Mounting:React.FC = () => {
   const massive = [
     "Рассчёт предварительной заявки",
     "Замер объекта нашим инженером",
