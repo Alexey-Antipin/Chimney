@@ -1,0 +1,43 @@
+.title {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 49px;
+  color: #000000;
+  margin-bottom: 66px;
+}
+.text {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.work {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 48px;
+}
+
+@media (max-width: 768px) {
+  .part {
+    margin-bottom: 56px;
+  }
+  .work {
+    justify-content: start;
+    margin-top: 48px;
+    margin: 0px 20px;
+  }
+  .work__photo {
+    height: 208px;
+    width: 226px;
+  }
+}
+
+@media (max-width: 500px) {
+  .work__photo {
+    height: 120px;
+    width: 130px;
+  }
+}
