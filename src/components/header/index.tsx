@@ -29,7 +29,7 @@ export const Header:React.FC = () => {
       <img className="header__logo" src={logo} alt="logo" />
 
       <div className="header__menu-for-notbook">
-        <SvgComponent word="murgermenu" />
+        <SvgComponent word="burgermenu" />
       </div>
 
       <ul className="header__list">
